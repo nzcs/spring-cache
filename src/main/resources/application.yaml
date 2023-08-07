@@ -1,11 +1,7 @@
 spring:
   cache:
     type: redis
-    payment:
-      time-to-live: 1200000
-    redis:
-      key-prefix: 'payment-gateway::'
 
-redis:
-  host: localhost
-  port: 6379
+  redis:
+    redisson:
+      file: classpath:redisson.yaml

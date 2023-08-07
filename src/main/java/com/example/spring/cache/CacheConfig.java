@@ -23,4 +23,19 @@ public class CacheConfig {
                                 .entryTtl(Duration.ofMillis(3000))
                 );
     }
+
+
+//    @Bean
+//    public RedissonClient redisson() {
+//        Config config = new Config();
+//        config.useSingleServer()
+//                .setAddress("redis://127.0.0.1:6379");
+//        config.setNettyThreads(64);
+//        return Redisson.create(config);
+//    }
+
+//    @Bean
+//    public RedisConnectionFactory redisConnectionFactory(RedissonClient redisson) {
+//        return new RedissonConnectionFactory(redisson);
+//    }
 }
